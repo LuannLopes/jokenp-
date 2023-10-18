@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Jokenpô</title>
 </head>
 
@@ -13,12 +14,13 @@
     <h1>Jokenpô.</h1>
     <h2>Escolha pedra, papel ou tesoura:</h2>
     <main>
-      <button><img src="img/punho.png" alt="icon-punho"></button>
-      <button><img src="img/palma-da-mao.png" alt="icon-palma-da-mao"></button>
-      <button><img src="img/letra-v.png" alt="icon-letra-v"></button>
+      <button id="rock" onclick="playHuman('rock')"><img src="img/punho.png" alt="icon-punho"></button>
+      <button id="paper" onclick="playHuman('paper')"><img src="img/palma-da-mao.png" alt="icon-palma-da-mao"></button>
+      <button id="scissors" onclick="playHuman('scissors')"><img src="img/letra-v.png" alt="icon-letra-v"></button>
     </main>
-    <p>Sua pontuação: <span>0</span></p>
-    <p>Pontuação do robô: <span>0</span></p>
+    <p class="result"></p>
+    <p>Sua pontuação: <span id="human-score">0</span></p>
+    <p>Pontuação do robô: <span id="machine-score">0</span></p>
   </div>
 </body>
 
